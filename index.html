@@ -15,6 +15,10 @@
     <title>my website</title>
 </head>
 <body>
+    
+    <!--  Scroll -->
+    <div class="scroller"></div>
+    <!--  Scroll -->
     <!-- start header -->
 <div class="header" id="header">
     <div class="container">
@@ -25,6 +29,9 @@
             <li><a href="#features">Features</a></li>
             <li>
                 <a href="#Other links">Other links</a>
+                <!-- Start Scroll -->
+                <i class="scro fa-solid fa-arrow-up"></i>
+                <!-- End Scroll -->
                 <!-- start megamenu -->
                 <div class="mega-menu">
                     <div class="image">
@@ -41,7 +48,7 @@
                             <a href="#services"><i class="fa-regular fa-building"></i>Services</a>
                         </li>
                         <li>
-                            <a href="#our skills"><i class="fa-regular fa-circle"></i></i>Our skills</a>
+                            <a href="#our-skills"><i class="fa-regular fa-circle"></i></i>Our skills</a>
                         </li>
                         <li>
                             <a href="#how It Works"><i class="fa-regular fa-clipboard"></i>How It Works</a>
@@ -50,7 +57,6 @@
                     <ul class="links">
                         <li>
                             <a href="#events"><i class="far fa-calendar-alt fa-fw"></i> Events</a>
-
                             </li>
                             <li>
                             <a href="#pricing"><i class="fas fa-server fa-fw"></i> Pricing Plans</a>
@@ -578,7 +584,7 @@
                 </div>
                 <!-- End Services -->
                 <!-- Start skill -->
-                <div class="our-skills" id="our skills">
+                <div class="our-skills" id="our-skills">
                     <h2 class="main-title">Our-skills</h2>
                     <div class="container">
                         <img src="images/skill.png" alt="">
@@ -586,25 +592,25 @@
                             <div class="skill">
                                 <h3>HTML <span>80%</span></h3>
                                 <div class="the-progres">
-                            <span style="width:80%"></span>
+                            <span style="width:0" data-width="80%"></span>
                         </div>
                             </div>
                             <div class="skill">
                                 <h3>CSS <span>85%</span></h3>
                                 <div class="the-progres">
-                            <span style="width:85%"></span>
+                            <span style="width:0" data-width="85%"></span>
                         </div>
                             </div>
                             <div class="skill">
                                 <h3>Javascript <span>90%</span></h3>
                                 <div class="the-progres">
-                            <span style="width:90%"></span>
+                            <span style="width:0" data-width="90%"></span>
                         </div>
                             </div>
                             <div class="skill">
                                 <h3>Python <span>70%</span></h3>
                                 <div class="the-progres">
-                            <span style="width:70%"></span>
+                            <span style="width:0" data-width="70%"></span>
                         </div>
                             </div>
                         </div>
@@ -659,23 +665,23 @@
                 <div class="info">
                     <div class="time">
                         <div class="unit">
-                            <span>15</span>
+                            <span class="Days"></span>
                             <span>Days</span>
                         </div>
                         <div class="unit">
-                            <span>08</span>
+                            <span class="Hours"></span>
                             <span>Hours</span>
                         </div>
                         <div class="unit">
-                            <span>45</span>
+                            <span class="Minutes"></span>
                             <span>Minutes</span>
                         </div>
                         <div class="unit">
-                            <span>55</span>
+                            <span class="Secondes"></span>
                             <span>Seconds</span>
                         </div>
                     </div>
-                    <h2 class="title">Tech Masters Event 2021</h2>
+                    <h2 class="title">Tech Masters Event 2023</h2>
                     <p class="description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero tenetur doloremque iusto ut adipisci quam
                         ratione aliquam excepturi nulla in harum, veritatis porro
@@ -781,26 +787,25 @@
             <h2>Our Awesome Stats</h2>
             <div class="container">
                 <div class="box">
-                    <i></i>
                     <i class="far fa-user fa-2x fa-fw"></i>
-                    <span class="number">300</span>
+                    <span class="number" data-goal="300">0</span>
                     <span class="text">Clients</span>
                 </div>
                 <div class="box">
                     <i class="fas fa-code fa-2x fa-fw"></i>
-                    <span class="number">400</span>
+                    <span class="number" data-goal="400">0</span>
                     <span class="text">Projects</span>
                 </div>
                 <div class="box">
                     <i></i>
                     <i class="fas fa-globe-asia fa-2x fa-fw"></i>
-                    <span class="number">12</span>
+                    <span class="number" data-goal="80">0</span>
                     <span class="text">Countries</span>
                 </div>
                 <div class="box">
                     <i></i>
                     <i class="far fa-money-bill-alt fa-2x fa-fw"></i>
-                    <span class="number">500K</span>
+                    <span class="number" data-goal="500">0</span>
                     <span class="text">Money</span>
                 </div>
             </div>
@@ -894,5 +899,6 @@
                 <p class="copyright">Made With &lt;3 By Elzero</p>
             </div>
             <!--End Footer -->
+            <script src="main.js"></script>
         </body>
         </html>
