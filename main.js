@@ -50,29 +50,29 @@ function startCounter(el) {
 // Counter Days
 
 
-let dateCounter = new Date("Dec 30 2023 23:59:59").getTime();
+// let dateCounter = new Date("Dec 30 2023 23:59:59").getTime();
 
-let counter = setInterval(() => {
-  let newDate = new Date().getTime();
-  let diff = dateCounter - newDate;
+// let counter = setInterval(() => {
+//   let newDate = new Date().getTime();
+//   let diff = dateCounter - newDate;
 
-  let days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / 1000 / 60 / 60);
-  let minutes = Math.floor((diff % (1000 * 60 * 60)) / 1000 / 60);
-  let secondes = Math.floor((diff % (1000 * 60)) / 1000);
+//   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+//   let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / 1000 / 60 / 60);
+//   let minutes = Math.floor((diff % (1000 * 60 * 60)) / 1000 / 60);
+//   let secondes = Math.floor((diff % (1000 * 60)) / 1000);
 
   // if (diff < 0) {
   //   clearInterval(counter);
   //   window.alert("Happy New Year");
   // }
 
-  document.querySelector(".Days").innerHTML = days < 10 ? `0${days}` : days;
-  document.querySelector(".Hours").innerHTML = hours < 10 ? `0${hours}` : hours;
-  document.querySelector(".Minutes").innerHTML =
-    minutes < 10 ? `0${minutes}` : minutes;
-  document.querySelector(".Secondes").innerHTML =
-    secondes < 10 ? `0${secondes}` : secondes;
-}, 1000);
+//   document.querySelector(".Days").innerHTML = days < 10 ? `0${days}` : days;
+//   document.querySelector(".Hours").innerHTML = hours < 10 ? `0${hours}` : hours;
+//   document.querySelector(".Minutes").innerHTML =
+//     minutes < 10 ? `0${minutes}` : minutes;
+//   document.querySelector(".Secondes").innerHTML =
+//     secondes < 10 ? `0${secondes}` : secondes;
+// }, 1000);
 
 
 
