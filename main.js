@@ -61,10 +61,10 @@ let counter = setInterval(() => {
   let minutes = Math.floor((diff % (1000 * 60 * 60)) / 1000 / 60);
   let secondes = Math.floor((diff % (1000 * 60)) / 1000);
 
-  if (diff < 0) {
-    clearInterval(counter);
-    window.alert("Happy New Year");
-  }
+  // if (diff < 0) {
+  //   clearInterval(counter);
+  //   window.alert("Happy New Year");
+  // }
 
   document.querySelector(".Days").innerHTML = days < 10 ? `0${days}` : days;
   document.querySelector(".Hours").innerHTML = hours < 10 ? `0${hours}` : hours;
